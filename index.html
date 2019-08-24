@@ -1,1 +1,667 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Fall 2019 : Artificial Intelligence</title>
+
+  <!-- bootstrap -->
+   <link rel="stylesheet" href="./style/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="./style/iitp01.css" rel="stylesheet" type="text/css">
+
+  <body>
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <a href="https://www.lti.cs.cmu.edu">
+      <img src="./static/ltilogo.png" style="height:50px; float: left; margin-left: 20px; margin-right: 20px;"></a>
+      <a class="navbar-brand" href="https://ai-cmu.github.io/"><font color="black">CMU-IITP-01</font></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="#overview"><font color="black">Overview</font></a></li>
+        <li class="nav-item"><a class="nav-link" href="#schedule"><font color="black">Schedule</font></a></li>
+        <li class="nav-item"><a class="nav-link" href="#exams"><font color="black">Exams</font></a></li>
+        <li class="nav-item"><a class="nav-link" href="#assignments"><font color="black">Assignments</font></a></li>
+        <li class="nav-item"><a class="nav-link" href="#policies"><font color="black">Policies</font></a></li>
+        <!--<li class="nav-item"><a class="nav-link" href="https://piazza.com/class/jy615af437wd3"><font color="black">Piazza</font></a></li>-->
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+      <div class="row">
+        <div class="instructor ">
+          <a href="#">
+            <img class="headshot-instructor" src="static/brain.jpg" style="text-align:center;">
+          </a>
+        </div>
+        <div class="instructor headshot-title">
+            <h1 class="display-7"><a href="https://www.lti.cs.cmu.edu/iitp-executive-education-course-fall-2019"> Fall 2019, IITP Executive Education Course </a> </h1>
+            <h2 class="display-5">Artificial Intelligence: Representation and Problem-Solving</h2>
+        </div>
+      </div>
+      <br />
+  </div>
+  </div>
+
+  <section id="overview">
+    <div class="container">
+
+    <h2>Overview</h2>
+        <dt>Lecture</dt> <dd>Monday + Wednesday 5:00 - 6:20pm <a href="https://bit.ly/30uBvPm">WEH 2302</a></dd>
+        <dt>Recitation</dt> <dd>Friday 5:00 - 6:00pm <a href="https://bit.ly/30uBvPm">WEH 2302</a></dd>
+        <dt>Instructors</dt>
+      <div class="row">
+        <div class="instructor">
+          <a href="https://www.cs.cmu.edu/~jgc/">
+            <img class="headshot-instructor" src="static/jgc.jpeg" style="text-align:center;">
+            <div style="text-align:center;font-size: 110%;">Dr. Jaime Carbonell</div>
+          </a>
+	      <p style="padding:2%; margin-left: 15%"> jgc [at] cmu [dot] edu </p>
+        </div>
+        <div class="instructor">
+          <a href="https://www.cs.cmu.edu/directory/gvns">
+            <img class="headshot-instructor" src="static/mgr.jpeg" style="text-align:center;">
+            <div style="text-align:center;font-size: 110%;">Dr. Madhavi Ganapathiraju</div>
+          </a>
+          <p style="padding:2%; margin-left: 10%"> madhavi [at] pit [dot] edu </p>
+        </div>
+      </div>
+
+      <dt>Teaching Assistants</dt>
+      <div class="row">
+        <div class="instructor">
+          <a href="https://www.cs.cmu.edu/~svmehta">
+            <img class="headshot" src="static/svm.jpeg" style="text-align:center; margin-top: 5%">
+            <div style="text-align:center;font-size: 100%; margin-left: 10%; margin-top:5%; margin-bottom:10%">Sanket Vaibhav Mehta</div>
+          </a>
+        </div>
+      </div>
+
+        <dt>Grading</dt> <dd>Midterm (20%), Final (20%), Written homework (30%), Programming homework (30%)</dd>
+
+        <dt>Course Materials</dt>
+    <dd>We recommend <a href="http://aima.cs.berkeley.edu/">
+        Artificial Intelligence: A Modern Approach, Third Edition </a> textbook for this course. Slides/ class notes will be posted periodically <a href="#schedule">here</a>. Instructors will try to upload slides before class.</dd>
+
+
+        <dt>Announcements + Q&A</dt>
+        <dd>We will use <a href="https://piazza.com/class/jy615af437wd3">Piazza</a> for questions and any course announcements. </dd>
+
+        <dt>Submitting Assignments</dt>
+        <dd>Students will turn in their homework electronically using <a href="https://www.gradescope.com/">Gradescope </a> (written part) and <a href="http://autolab.andrew.cmu.edu"> Autolab </a>(programming part)</dd>
+    </div>
+
+ </section>
+
+
+  <section id="schedule">
+    <div class="container">
+      <h2>Schedule</h2>
+    <table id="schedule1" class="table table-bordered no-more-tables">
+    <thead class="active" style="background-color:#f9f9f9">
+      <th>Event</th><th>Date</th><th>Description</th><th>Reading and Class notes</th>
+    </thead>
+
+  <tbody>
+  <tr>
+    <td>Lecture&nbsp;1 </td>
+    <td> Aug 26 </td>
+    <td>
+     Introduction
+    </td>
+    <td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+  </tr>
+  <tr>
+    <td>Lecture&nbsp;2 </td>
+    <td>Aug 28</td>
+    <td>
+    Search: Uninformed Search
+    </td>
+    <td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+  </tr>
+
+   <tr>
+      <td> </td>
+      <td>Sept 2</td>
+      <td>Holiday: No class</td>
+      <td></td>
+    </tr>
+
+  <tr>
+    <td>Lecture&nbsp;3</td>
+    <td>Sept 4</td>
+    <td>
+    Search: Uninformed Search, <br> Informed Search <br>
+    </td>
+    <td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Lecture&nbsp;4</td>
+    <td>Sept 9</td>
+    <td>
+    Search: Informed Search </td>
+    <td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Lecture&nbsp;5</td>
+    <td>Sept 11</td>
+    <td>
+    Constraint Satisfaction Problems
+    </td>
+    <td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+    <td>Lecture&nbsp;6</td>
+    <td>Sept 16</td>
+    <td>
+    Search: Adversarial Search
+    </td>
+    <td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+	<td>Lecture&nbsp;7</td>
+	<td>Sept 18 </td>
+	<td>
+	Logical Agents, Propositional Logic
+	</td>
+    <td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+	<td>Lecture&nbsp;8</td>
+	<td>Sept 23 </td>
+	<td>
+	First Order Logic
+	</td>
+    <td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+	<td>Lecture&nbsp;9</td>
+	<td>Sept 25 </td>
+	<td>
+	Ontologies
+	</td>
+	<td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+     </tr>
+
+  <tr>
+	<td>Lecture&nbsp;10</td>
+	<td>Sept 30 </td>
+	<td>
+	Classical Planning
+	</td>
+	<td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+     </tr>
+
+  <tr>
+	<td></td>
+	<td>Oct 2 </td>
+	<td>
+	No class
+	</td>
+	<td>
+    </td>
+     </tr>
+
+  <tr>
+	<td>Lecture&nbsp;11</td>
+	<td>Oct 7 </td>
+	<td>
+	Example Applications, part I
+	</td>
+	<td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+     </tr>
+    <tr>
+	<td>Lecture&nbsp;12</td>
+	<td>Oct 9 </td>
+	<td>
+	Review of Material for Midterm
+	</td>
+	<td>
+	</td>
+     </tr>
+
+  <tr>
+	<td></td>
+	<td>Oct 14 </td>
+	<td>
+	MIDTERM EXAM
+	</td>
+	<td>
+    </td>
+     </tr>
+
+  <tr>
+	<td>Lecture&nbsp;13</td>
+	<td>Oct 16 </td>
+	<td>
+	Probabilistic Reasoning
+	</td>
+    <td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+  </tr>
+
+
+  <tr>
+	<td>Lecture&nbsp;14</td>
+	<td>Oct 21 </td>
+	<td>
+	Machine Learning
+	</td>
+	<td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+     </tr>
+
+  <tr>
+	<td>Lecture&nbsp;15</td>
+	<td>Oct 23 </td>
+	<td>
+	Machine Learning, continued
+	</td>
+	<td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+     </tr>
+
+  <tr>
+	<td>Lecture&nbsp;16</td>
+	<td>Oct 28 </td>
+	<td>
+	Bayesian Networks
+	</td>
+	<td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+     </tr>
+
+  <tr>
+	<td>Lecture&nbsp;17</td>
+	<td>Oct 30 </td>
+	<td>
+	Bayesian Networks, continued
+	</td>
+	<td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+     </tr>
+
+  <tr>
+	<td>Lecture&nbsp;18</td>
+	<td>Nov 4</td>
+	<td>
+	Markov Decision Process
+	</td>
+	<td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+     </tr>
+
+  <tr>
+	<td>Lecture&nbsp;19</td>
+	<td>Nov 6 </td>
+	<td>
+	Hidden Markov Models
+	</td>
+	<td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+     </tr>
+
+  <tr>
+	<td>Lecture&nbsp;20</td>
+	<td>Nov 11 </td>
+	<td>
+	Reinforcement Learning
+	</td>
+	<td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+     </tr>
+
+  <tr>
+	<td>Lecture&nbsp;21</td>
+	<td>Nov 13 </td>
+	<td>
+	Ruled-Based Systems
+	</td>
+	<td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+     </tr>
+
+    <tr>
+	<td>Lecture&nbsp;22</td>
+	<td>Nov 18 </td>
+	<td>
+	Explainable AI: Review of Recent papers
+	</td>
+	<td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+     </tr>
+
+  <tr>
+	<td>Lecture&nbsp;23</td>
+	<td>Nov 20 </td>
+	<td>
+	 Example Applications, part II
+	</td>
+    <td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+     </tr>
+
+  <tr>
+	<td>Lecture&nbsp;24</td>
+	<td>Nov 25 </td>
+	<td>
+	 Example Applications, part III
+	</td>
+	<td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+     </tr>
+
+  <tr>
+	<td></td>
+	<td>Nov 27 </td>
+	<td>
+	 Holiday: No class
+	</td>
+	<td>
+	</td>
+     </tr>
+
+
+  <tr>
+	<td>Lecture&nbsp;25</td>
+	<td>Dec 2 </td>
+	<td>
+	Transfer Learning and Active Learning
+	</td>
+	<td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+     </tr>
+
+  <tr>
+	<td>Lecture&nbsp;26</td>
+	<td>Dec 4 </td>
+	<td>
+	 Review of Material for Final
+	</td>
+	<td>
+	</td>
+     </tr>
+
+  <tr>
+	<td></td>
+	<td>Dec 9 </td>
+	<td>
+	 No class
+	</td>
+	<td>
+	</td>
+     </tr>
+
+  <tr>
+	<td></td>
+	<td>Dec 11 </td>
+	<td>
+	 FINAL EXAM
+	</td>
+	<td>
+	</td>
+     </tr>
+
+    <tr class="alert">
+    <td colspan="4">
+    <h3> Tentative Dates: </h3>
+    Check Piazza for updates:
+    <ul>
+    <li> Assigment 1: Out: Sept 4th -- Due Sept 18th
+    <li> Assigment 2: Out: Sept 20th -- Due Oct 4th
+    <li> Assigment 3: Out: Oct 21st -- Due Nov 4th
+    <li> Assigment 4: Out: Nov 11th -- Due Nov 25th
+    </ul>
+    </td></tr>
+
+      <tr class="alert">
+        <td colspan="4">
+    <h3> Book(s) </h3>:
+    <br>
+    <ul>Stuart Russell and Peter Norvig,
+    <a href="http://aima.cs.berkeley.edu/">
+    Artificial Intelligence: A Modern Approach (Third Edition) </a>
+    </ul>
+        </td>
+
+    </tbody></table>
+
+
+    </div>
+  </section>
+
+<section id="exams">
+    <div class="container">
+    <h2>Exams</h2>
+        <dd>The course includes a midterm exam (Oct 14) and a final exam (Dec 11). Both the exams will be in class.</dd>
+    </div>
+</section>
+
+<section id="assignments">
+    <div class="container">
+    <h2>Assignments</h2>
+    <dd>There will be <b>four</b> assignments for the course whose details are mentioned above.
+<br>    Please write all assignments in LaTeX using the provided style file (check Piazza).
+        <b>60%</b> of course grades will be based on 4 assignments (<b>15%</b> each). <br>
+      <!--<dt> Homework Assignments </dt>-->
+	The assignments are to be done by each student individually.  You may discuss the general idea of the questions with anyone you like, but your discussion may not include the specific answers to any of the problems.
+<br>
+    </div>
+</section>
+
+    <section id="policies">
+<div class="container">
+<h2 id="6-general-policies">Policies</h2>
+<h3> Late Submission Policy </h3>
+Each student will be allowed 5 total late days without penalty for the entire
+semester. No more than 3 late days can be used on any single assignment. Weekends and holidays are also counted as late days. Late submissions are automatically considered as using late days.
+    <br> <b> NOTE: Any assignment submitted more than 3 days past the deadline will get zero credit.</b>
+<br> <br>
+
+<h4 id="extensions">Extensions</h4>
+<p>In general, we do not grant extensions on assignments. There are several exceptions:</p>
+<ul>
+  <li><strong>Medical Emergencies:</strong> If you are sick and unable to complete an
+assignment or attend class, please go to University Health
+Services. For minor illnesses, we expect grace days or our late
+penalties to provide sufficient accommodation. For medical
+emergencies (e.g. prolonged hospitalization), students may request
+an extension afterwards and should include a note from University
+Health Services.</li>
+Certificate</b> or a <b>written</b> (not email) request submitted at least one week before the due date and approved by the instructor.  Please plan ahead.
+  <li><strong>Family/Personal Emergencies:</strong> If you have a family emergency
+(e.g. death in the family) or a personal emergency (e.g. mental
+health crisis), please contact your academic adviser or Counseling
+and Psychological Services (CaPS). In addition to offering support,
+they will reach out to the instructors for all your courses on your
+behalf to request an extension.</li>
+  <li><strong>University-Approved Absences:</strong> If you are attending an
+out-of-town university approved event (e.g. multi-day
+athletic/academic trip organized by the university), you may request
+an extension for the duration of the trip. You must provide
+confirmation of your attendance, usually from a faculty or staff
+organizer of the event.</li>
+</ul>
+
+<p>For any of the above situations, you may request an extension <strong>by
+emailing the TA at svmehta [a] cs [dot] cmu [dot] edu  – do not email
+the instructor</strong>. The email should be sent as soon as you are
+aware of the conflict and at least <strong>5 days prior to the
+deadline</strong>. In the case of an emergency, no notice is needed.</p>
+
+
+<h3 id="7-academic-integrity-policies">Academic Integrity Policies</h3>
+
+<p><strong>Read this carefully!</strong></p>
+
+<p>(Adapted from Roni Rosenfeld’s <a href="http://www.cs.cmu.edu/~roni/10601/">10-601 Spring 2016</a> Course Policies.)</p>
+
+<h4 id="collaboration-among-students">Collaboration among Students</h4>
+
+<ul>
+  <li>The purpose of student collaboration is to facilitate learning, not to circumvent it. Studying the material in groups is strongly encouraged. It is also allowed to seek help from other students in understanding the material needed to solve a particular homework problem, provided no written notes (including code) are shared, or are taken at that time, and provided learning is facilitated, not circumvented. The actual solution must be done by each student alone.</li>
+  <li>The presence or absence of any form of help or collaboration, whether given or received, must be explicitly stated and disclosed in full by all involved. Specifically, each assignment solution must include answering the following questions:
+    <ol>
+      <li>Did you receive any help whatsoever from anyone in solving this assignment?   Yes / No.
+        <ul>
+          <li>If you answered ‘yes’, give full details:  <strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong></li>
+          <li>(e.g. “Jane Doe explained to me what is asked in Question 3.4”)</li>
+        </ul>
+      </li>
+      <li>Did you give any help whatsoever to anyone in solving this assignment?           Yes / No.
+        <ul>
+          <li>If you answered ‘yes’, give full details: <strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong>_</li>
+          <li>(e.g. “I pointed Joe Smith to section 2.3 since he didn’t know how to proceed with Question 2”)</li>
+        </ul>
+      </li>
+      <li>Did you find or come across code that implements any part of this assignment ?  Yes / No.    (See below policy on “found code”)
+        <ul>
+          <li>If you answered ‘yes’, give full details: <strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong><strong>__</strong>_</li>
+          <li>(book &amp; page, URL &amp; location within the page, etc.).</li>
+        </ul>
+      </li>
+    </ol>
+  </li>
+  <li>If you gave help after turning in your own assignment and/or after answering the questions above, you must update your answers before the assignment’s deadline, if necessary by emailing the course staff.</li>
+  <li>Collaboration without full disclosure will be handled severely, in compliance with <a href="https://www.cmu.edu/policies/student-and-student-life/academic-integrity.html">CMU’s Policy on Academic Integrity</a>.</li>
+</ul>
+
+<h4 id="previously-used-assignments">Previously Used Assignments</h4>
+
+<p>Some of the homework assignments used in this class may have been used in prior versions of this class, or in classes at other institutions, or elsewhere. Solutions to them may be, or may have been, available online, or from other people or sources.  It is explicitly forbidden to use any such sources, or to consult people who have solved these problems before.  It is explicitly forbidden to search for these problems or their solutions on the internet.  You must solve the homework assignments completely on your own. We will be actively monitoring your compliance.  Collaboration with other students who are currently taking the class is allowed, but only under the conditions stated above.</p>
+
+<h4 id="policy-regarding-found-code">Policy Regarding “Found Code”:</h4>
+
+<p>You are encouraged to read books and other instructional materials, both online and offline, to help you understand the concepts and algorithms taught in class. These materials may contain example code or pseudo code, which may help you better understand an algorithm or an implementation detail. However, when you implement your own solution to an assignment, you must put all materials aside, and write your code completely on your own, starting “from scratch”. Specifically, you may not use any code you found or came across. If you find or come across code that implements any part of your assignment, you must disclose this fact in your collaboration statement.</p>
+
+<h4 id="duty-to-protect-ones-work">Duty to Protect One’s Work</h4>
+
+<p>Students are responsible for pro-actively protecting their work from copying and misuse by other students. If a student’s work is copied by another student, the original author is also considered to be at fault and in gross violation of the course policies. It does not matter whether the author allowed the work to be copied or was merely negligent in preventing it from being copied. When overlapping work is submitted by different students, both students will be punished.</p>
+
+<p>To protect future students, do not post your solutions publicly, neither during the course nor afterwards.</p>
+
+<h4 id="penalties-for-violations-of-course-policies">Penalties for Violations of Course Policies</h4>
+
+<p>All violations (even first one) of course policies will always be
+reported to the university authorities (your Department Head,
+Associate Dean, Dean of Student Affairs, etc.) as an official Academic
+Integrity Violation and will carry severe penalties.</p>
+
+<ol>
+  <li>
+    <p>The penalty for the first violation is a one-and-a-half letter
+grade reduction. For example, if your final letter grade for the
+course was to be an A-, it would become a C+.</p>
+  </li>
+  <li>
+    <p>The penalty for the second violation is failure in the course, and
+can even lead to dismissal from the university.</p>
+  </li>
+</ol>
+
+<h3 id="accommodations-for-students-with-disabilities">Accommodations for Students with Disabilities:</h3>
+
+    <p>If you have a disability and have an accommodations letter from the
+    Disability Resources office, we encourage you to discuss your
+    accommodations and needs with us as early in the semester as
+    possible. We will work with you to ensure that accommodations are
+    provided as appropriate. If you suspect that you may have a disability
+    and would benefit from accommodations but are not yet registered with
+    the Office of Disability Resources, we encourage you to contact them at
+    <a href="mailto:access@andrew.cmu.edu">access@andrew.cmu.edu</a>.</p>
+
+<h3 id="8-support">Statement of Support for Students’ Health & Well-being</h3>
+
+<p>Take care of yourself.  Do your best to maintain a healthy lifestyle this semester by eating well, exercising, avoiding drugs and alcohol, getting enough sleep and taking some time to relax. This will help you achieve your goals and cope with stress. <br>
+ All of us benefit from support during times of struggle. You are not alone. There are many helpful resources available on campus and an important part of the college experience is learning how to ask for help. Asking for support sooner rather than later is often helpful. <br>
+  If you or anyone you know experiences any academic stress, difficult life events, or feelings like anxiety or depression, we strongly encourage you to seek support. Counseling and Psychological Services (CaPS) is here to help: call 412-268-2922 and visit their website at <a href="http://www.cmu.edu/counseling/">http://www.cmu.edu/counseling/</a>. Consider reaching out to a friend, faculty or family member you trust for help getting connected to the support that can help. <br>If you or someone you know is feeling suicidal or in danger of self-harm, call someone immediately, day or night:</p>
+
+<ul>
+  <li>CaPS: 412-268-2922</li>
+  <li>Re:solve Crisis Network: 888-796-8226</li>
+  <li>If the situation is life threatening, call the police:
+    <ul>
+      <li>On campus: CMU Police: 412-268-2323</li>
+      <li>Off campus: 911.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>If you have questions about this or your coursework, please let the instructors know.</p>
+
+<hr />
+
+    <p><b>Note:</b> This website is adapted from <a href="https://deeplearning-cmu-10707.github.io"> 10707 Spring 2019</a> course website.</p>
+  </div>
+  </section>
+  </body>
+</html>
