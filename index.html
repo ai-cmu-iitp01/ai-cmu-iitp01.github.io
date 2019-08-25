@@ -13,69 +13,63 @@
   <nav class="navbar navbar-expand-md navbar-dark">
     <a href="https://www.lti.cs.cmu.edu">
       <img src="./static/ltilogo.png" style="height:50px; float: left; margin-left: 20px; margin-right: 20px;"></a>
-      <a class="navbar-brand" href="https://ai-cmu-iitp01.github.io/"><font color="black">CMU-IITP-01</font></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
+      <a class="navbar-brand" href="#"><span class="font-color">CMU-IITP-01</span></a>
+
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a class="nav-link" href="#overview"><font color="black">Overview</font></a></li>
-        <li class="nav-item"><a class="nav-link" href="#schedule"><font color="black">Schedule</font></a></li>
-        <li class="nav-item"><a class="nav-link" href="#exams"><font color="black">Exams</font></a></li>
-        <li class="nav-item"><a class="nav-link" href="#assignments"><font color="black">Assignments</font></a></li>
-        <li class="nav-item"><a class="nav-link" href="#policies"><font color="black">Policies</font></a></li>
-        <!--<li class="nav-item"><a class="nav-link" href="https://piazza.com/class/jy615af437wd3"><font color="black">Piazza</font></a></li>-->
+        <li class="nav-item"><a class="nav-link" href="#overview"><span class="font-color" size="4%">Overview</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#schedule"><span class="font-color" size="4%">Schedule</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#exams"><span class="font-color" size="4%">Exams</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#assignments"><span class="font-color" size="4%">Assignments</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#policies"><span class="font-color"  size="4%">Policies</span></a></li>
       </ul>
     </div>
   </nav>
 
-  <div class="jumbotron jumbotron-fluid">
-      <div class="container">
+  <div class="container jumbotron">
       <div class="row">
-        <div class="instructor ">
-          <a href="#">
-            <img class="headshot-instructor" src="static/brain.jpg" style="text-align:center;">
-          </a>
+        <div class="col-lg-2">
+            <img class="course-img" src="static/brain.jpg">
         </div>
-        <div class="instructor headshot-title">
-            <h1 class="display-7"><a href="https://www.lti.cs.cmu.edu/iitp-executive-education-course-fall-2019"> Fall 2019, IITP Executive Education Course </a> </h1>
-            <h2 class="display-5">Artificial Intelligence: Representation and Problem-Solving</h2>
+        <div class="course-title col-lg-10">
+            <h1> Fall 2019, IITP Executive Education Course </h1>
+            <h2><span class="font-color">Artificial Intelligence: Representation and Problem Solving</span></h2>
         </div>
       </div>
       <br />
   </div>
-  </div>
 
   <section id="overview">
     <div class="container">
-
     <h2>Overview</h2>
         <dt>Lecture</dt> <dd>Monday + Wednesday 5:00 - 6:20pm <a href="https://bit.ly/30uBvPm">WEH 2302</a></dd>
         <dt>Recitation</dt> <dd>Friday 5:00 - 6:00pm <a href="https://bit.ly/30uBvPm">WEH 2302</a></dd>
         <dt>Instructors</dt>
       <div class="row">
-        <div class="instructor">
-          <a href="https://www.cs.cmu.edu/~jgc/">
-            <img class="headshot-instructor" src="static/jgc.jpeg" style="text-align:center;">
-            <div style="text-align:center;font-size: 110%;">Dr. Jaime Carbonell</div>
-          </a>
-	      <p style="padding:2%; margin-left: 15%"> jgc [at] cmu [dot] edu </p>
-        </div>
-        <div class="instructor">
+        <div>
           <a href="https://www.cs.cmu.edu/directory/gvns">
-            <img class="headshot-instructor" src="static/mgr.jpeg" style="text-align:center;">
-            <div style="text-align:center;font-size: 110%;">Dr. Madhavi Ganapathiraju</div>
+            <img class="instructor-img" src="static/mgr.jpeg">
+            <div style="text-align:center;font-size: 100%; margin-left: 1%">Dr. Madhavi Ganapathiraju</div>
           </a>
           <p style="padding:2%; margin-left: 10%"> madhavi [at] pit [dot] edu </p>
         </div>
+
+          <div>
+          <a href="https://www.cs.cmu.edu/~jgc/">
+            <img class="instructor-img" src="static/jgc.jpeg">
+            <div style="text-align:center;font-size: 100%;">Dr. Jaime Carbonell</div>
+          </a>
+	      <p style="padding:2%; margin-left: 15%"> jgc [at] cmu [dot] edu </p>
+        </div>
+
       </div>
 
       <dt>Teaching Assistants</dt>
       <div class="row">
-        <div class="instructor">
+        <div>
           <a href="https://www.cs.cmu.edu/~svmehta">
-            <img class="headshot" src="static/svm.jpeg" style="text-align:center; margin-top: 5%">
+            <img class="instructor-img" src="static/svm.jpeg" style="text-align:center; margin-top: 5%">
             <div style="text-align:center;font-size: 100%; margin-left: 10%; margin-top:5%; margin-bottom:10%">Sanket Vaibhav Mehta</div>
           </a>
         </div>
@@ -85,64 +79,72 @@
 
         <dt>Course Materials</dt>
     <dd>We recommend <a href="http://aima.cs.berkeley.edu/">
-        Artificial Intelligence: A Modern Approach, Third Edition </a> textbook for this course. Slides/ class notes will be posted periodically <a href="#schedule">here</a>. Instructors will try to upload slides before class.</dd>
+        Artificial Intelligence: A Modern Approach, Third Edition </a> textbook for this course. Slides/ class notes will be posted periodically <a href="#schedule">here</a></dd>
 
 
         <dt>Announcements + Q&A</dt>
         <dd>We will use <a href="https://piazza.com/class/jy615af437wd3">Piazza</a> for questions and any course announcements. </dd>
 
         <dt>Submitting Assignments</dt>
-        <dd>Students will turn in their homework electronically using <a href="https://www.gradescope.com/">Gradescope </a> (written part) and <a href="http://autolab.andrew.cmu.edu"> Autolab </a>(programming part)</dd>
+        <dd>Students will turn in their homework electronically using <a href="https://www.gradescope.com/">Gradescope</a>.</dd>
+        <br>
+    </div>
     </div>
 
  </section>
-
 
   <section id="schedule">
     <div class="container">
       <h2>Schedule</h2>
     <table id="schedule1" class="table table-bordered no-more-tables">
     <thead class="active" style="background-color:#f9f9f9">
-      <th>Event</th><th>Date</th><th>Description</th><th>Reading and Class notes</th>
+      <th>Lecture</th><th>Date</th><th>Topic</th><th>Instructor</th><th>Reading and Class notes</th>
     </thead>
 
   <tbody>
   <tr>
     <td>Lecture&nbsp;1 </td>
-    <td> Aug 26 </td>
+    <td> Aug 28 </td>
     <td>
      Introduction
     </td>
-    <td>
-    <b>Reading:</b> <br>
-      Class Notes [<a href="#">pdf</a>]
-    </td>
-  </tr>
-  <tr>
-    <td>Lecture&nbsp;2 </td>
-    <td>Aug 28</td>
-    <td>
-    Search: Uninformed Search
-    </td>
+      <td>Madhavi</td>
     <td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
     </td>
   </tr>
 
-   <tr>
+  <tr>
       <td> </td>
       <td>Sept 2</td>
       <td>Holiday: No class</td>
       <td></td>
+      <td></td>
     </tr>
 
   <tr>
-    <td>Lecture&nbsp;3</td>
+    <td>Lecture&nbsp;2 </td>
     <td>Sept 4</td>
+    <td>
+    Search: Uninformed Search
+    </td>
+      <td>Madhavi</td>
+    <td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+  </tr>
+
+
+
+  <tr>
+    <td>Lecture&nbsp;3</td>
+    <td>Sept 9</td>
     <td>
     Search: Uninformed Search, <br> Informed Search <br>
     </td>
+      <td>Madhavi</td>
     <td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
@@ -151,9 +153,10 @@
 
   <tr>
     <td>Lecture&nbsp;4</td>
-    <td>Sept 9</td>
+    <td>Sept 11</td>
     <td>
     Search: Informed Search </td>
+      <td>Madhavi</td>
     <td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
@@ -162,10 +165,11 @@
 
   <tr>
     <td>Lecture&nbsp;5</td>
-    <td>Sept 11</td>
+    <td>Sept 16</td>
     <td>
     Constraint Satisfaction Problems
     </td>
+      <td>Madhavi</td>
     <td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
@@ -174,10 +178,11 @@
 
   <tr>
     <td>Lecture&nbsp;6</td>
-    <td>Sept 16</td>
+    <td>Sept 18</td>
     <td>
     Search: Adversarial Search
     </td>
+      <td>Madhavi</td>
     <td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
@@ -186,10 +191,11 @@
 
   <tr>
 	<td>Lecture&nbsp;7</td>
-	<td>Sept 18 </td>
+	<td>Sept 23 </td>
 	<td>
 	Logical Agents, Propositional Logic
 	</td>
+      <td>Madhavi</td>
     <td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
@@ -198,10 +204,11 @@
 
   <tr>
 	<td>Lecture&nbsp;8</td>
-	<td>Sept 23 </td>
+	<td>Sept 25 </td>
 	<td>
 	First Order Logic
 	</td>
+      <td>Madhavi</td>
     <td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
@@ -210,22 +217,11 @@
 
   <tr>
 	<td>Lecture&nbsp;9</td>
-	<td>Sept 25 </td>
-	<td>
-	Ontologies
-	</td>
-	<td>
-    <b>Reading:</b> <br>
-      Class Notes [<a href="#">pdf</a>]
-    </td>
-     </tr>
-
-  <tr>
-	<td>Lecture&nbsp;10</td>
 	<td>Sept 30 </td>
 	<td>
 	Classical Planning
 	</td>
+      <td>Jaime</td>
 	<td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
@@ -238,27 +234,31 @@
 	<td>
 	No class
 	</td>
+      <td></td>
 	<td>
     </td>
      </tr>
 
   <tr>
-	<td>Lecture&nbsp;11</td>
+	<td>Lecture&nbsp;10</td>
 	<td>Oct 7 </td>
 	<td>
 	Example Applications, part I
 	</td>
+      <td>Madhavi</td>
 	<td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
     </td>
      </tr>
-    <tr>
-	<td>Lecture&nbsp;12</td>
+
+  <tr>
+	<td>Lecture&nbsp;11</td>
 	<td>Oct 9 </td>
 	<td>
 	Review of Material for Midterm
 	</td>
+      <td>Madhavi/ Sanket</td>
 	<td>
 	</td>
      </tr>
@@ -267,18 +267,33 @@
 	<td></td>
 	<td>Oct 14 </td>
 	<td>
-	MIDTERM EXAM
+        <b>MIDTERM EXAM</b>
 	</td>
+      <td></td>
 	<td>
     </td>
      </tr>
 
   <tr>
-	<td>Lecture&nbsp;13</td>
+	<td>Lecture&nbsp;12</td>
 	<td>Oct 16 </td>
+	<td>
+	Ontologies
+	</td>
+      <td>Madhavi</td>
+    <td>
+    <b>Reading:</b> <br>
+      Class Notes [<a href="#">pdf</a>]
+    </td>
+  </tr>
+
+  <tr>
+	<td>Lecture&nbsp;13</td>
+	<td>Oct 21 </td>
 	<td>
 	Probabilistic Reasoning
 	</td>
+      <td>Madhavi</td>
     <td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
@@ -288,10 +303,11 @@
 
   <tr>
 	<td>Lecture&nbsp;14</td>
-	<td>Oct 21 </td>
+	<td>Oct 23 </td>
 	<td>
 	Machine Learning
 	</td>
+      <td>Jaime</td>
 	<td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
@@ -300,10 +316,11 @@
 
   <tr>
 	<td>Lecture&nbsp;15</td>
-	<td>Oct 23 </td>
+	<td>Oct 28 </td>
 	<td>
 	Machine Learning, continued
 	</td>
+      <td>Madhavi</td>
 	<td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
@@ -312,10 +329,11 @@
 
   <tr>
 	<td>Lecture&nbsp;16</td>
-	<td>Oct 28 </td>
+	<td>Oct 30 </td>
 	<td>
 	Bayesian Networks
 	</td>
+      <td>Madhavi</td>
 	<td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
@@ -324,10 +342,11 @@
 
   <tr>
 	<td>Lecture&nbsp;17</td>
-	<td>Oct 30 </td>
+	<td>Nov 4</td>
 	<td>
 	Bayesian Networks, continued
 	</td>
+      <td>Madhavi</td>
 	<td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
@@ -336,10 +355,11 @@
 
   <tr>
 	<td>Lecture&nbsp;18</td>
-	<td>Nov 4</td>
+	<td>Nov 6</td>
 	<td>
 	Markov Decision Process
 	</td>
+      <td>Madhavi</td>
 	<td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
@@ -348,10 +368,11 @@
 
   <tr>
 	<td>Lecture&nbsp;19</td>
-	<td>Nov 6 </td>
+	<td>Nov 11 </td>
 	<td>
 	Hidden Markov Models
 	</td>
+      <td>Madhavi</td>
 	<td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
@@ -360,10 +381,11 @@
 
   <tr>
 	<td>Lecture&nbsp;20</td>
-	<td>Nov 11 </td>
+	<td>Nov 13 </td>
 	<td>
 	Reinforcement Learning
 	</td>
+      <td>Madhavi/ Sanket</td>
 	<td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
@@ -372,10 +394,11 @@
 
   <tr>
 	<td>Lecture&nbsp;21</td>
-	<td>Nov 13 </td>
+	<td>Nov 18 </td>
 	<td>
 	Ruled-Based Systems
 	</td>
+      <td>Jaime</td>
 	<td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
@@ -384,10 +407,11 @@
 
     <tr>
 	<td>Lecture&nbsp;22</td>
-	<td>Nov 18 </td>
+	<td>Nov 20 </td>
 	<td>
 	Explainable AI: Review of Recent papers
 	</td>
+        <td>Madhavi</td>
 	<td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
@@ -396,23 +420,12 @@
 
   <tr>
 	<td>Lecture&nbsp;23</td>
-	<td>Nov 20 </td>
+	<td>Nov 25 </td>
 	<td>
 	 Example Applications, part II
 	</td>
+      <td></td>
     <td>
-    <b>Reading:</b> <br>
-      Class Notes [<a href="#">pdf</a>]
-    </td>
-     </tr>
-
-  <tr>
-	<td>Lecture&nbsp;24</td>
-	<td>Nov 25 </td>
-	<td>
-	 Example Applications, part III
-	</td>
-	<td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
     </td>
@@ -424,17 +437,19 @@
 	<td>
 	 Holiday: No class
 	</td>
+      <td></td>
 	<td>
 	</td>
      </tr>
 
 
   <tr>
-	<td>Lecture&nbsp;25</td>
+	<td>Lecture&nbsp;24</td>
 	<td>Dec 2 </td>
 	<td>
 	Transfer Learning and Active Learning
 	</td>
+      <td>Jaime</td>
 	<td>
     <b>Reading:</b> <br>
       Class Notes [<a href="#">pdf</a>]
@@ -442,11 +457,12 @@
      </tr>
 
   <tr>
-	<td>Lecture&nbsp;26</td>
+	<td>Lecture&nbsp;25</td>
 	<td>Dec 4 </td>
 	<td>
 	 Review of Material for Final
 	</td>
+      <td>Madhavi/ Sanket</td>
 	<td>
 	</td>
      </tr>
@@ -457,6 +473,7 @@
 	<td>
 	 No class
 	</td>
+      <td></td>
 	<td>
 	</td>
      </tr>
@@ -465,35 +482,28 @@
 	<td></td>
 	<td>Dec 11 </td>
 	<td>
-	 FINAL EXAM
+        <b>FINAL EXAM</b>
 	</td>
+      <td></td>
 	<td>
 	</td>
      </tr>
 
-    <tr class="alert">
-    <td colspan="4">
-    <h3> Tentative Dates: </h3>
-    Check Piazza for updates:
-    <ul>
-    <li> Assigment 1: Out: Sept 2nd -- Due Sept 16th
-    <li> Assigment 2: Out: Sept 23rd -- Due Oct 7th
-    <li> Assigment 3: Out: Oct 21st -- Due Nov 4th
-    <li> Assigment 4: Out: Nov 11th -- Due Nov 25th
-    </ul>
-    </td></tr>
-
-      <tr class="alert">
-        <td colspan="4">
-    <h3> Book(s) </h3>:
-    <br>
-    <ul>Stuart Russell and Peter Norvig,
-    <a href="http://aima.cs.berkeley.edu/">
-    Artificial Intelligence: A Modern Approach (Third Edition) </a>
-    </ul>
+    <tr>
+        <td colspan="5">
+        <h3> Tentative Assignment Dates: </h3>
+        Check Piazza for updates:
+        <ul>
+        <li> Assigment 1: Out: Sept 2nd -- Due Sept 16th
+        <li> Assigment 2: Out: Sept 23rd -- Due Oct 7th
+        <li> Assigment 3: Out: Oct 21st -- Due Nov 4th
+        <li> Assigment 4: Out: Nov 11th -- Due Nov 25th
+        </ul>
         </td>
+    </tr>
 
-    </tbody></table>
+    </tbody>
+    </table>
 
 
     </div>
@@ -502,14 +512,14 @@
 <section id="exams">
     <div class="container">
     <h2>Exams</h2>
-        <dd>The course includes a midterm exam (Oct 14) and a final exam (Dec 11). Both the exams will be in class.</dd>
+        <dd>The course includes a midterm exam <b>(Oct 14)</b> and a final exam <b>(Dec 11)</b>. Both the exams will be in class.</dd>
     </div>
 </section>
 
 <section id="assignments">
     <div class="container">
     <h2>Assignments</h2>
-    <dd>There will be <b>four</b> assignments for the course whose details are mentioned above.
+    <dd>There will be <b>four</b> assignments for the course with tentative due dates as mentioned above.
 <br>    Please write all assignments in LaTeX using the provided style file (check Piazza).
         <b>60%</b> of course grades will be based on 4 assignments (<b>15%</b> each). <br>
       <!--<dt> Homework Assignments </dt>-->
@@ -528,35 +538,9 @@ semester. No more than 3 late days can be used on any single assignment. Weekend
 <br> <br>
 
 <h4 id="extensions">Extensions</h4>
-<p>In general, we do not grant extensions on assignments. There are several exceptions:</p>
-<ul>
-  <li><strong>Medical Emergencies:</strong> If you are sick and unable to complete an
-assignment or attend class, please go to University Health
-Services. For minor illnesses, we expect grace days or our late
-penalties to provide sufficient accommodation. For medical
-emergencies (e.g. prolonged hospitalization), students may request
-an extension afterwards and should include a note from University
-Health Services.</li>
-Certificate</b> or a <b>written</b> (not email) request submitted at least one week before the due date and approved by the instructor.  Please plan ahead.
-  <li><strong>Family/Personal Emergencies:</strong> If you have a family emergency
-(e.g. death in the family) or a personal emergency (e.g. mental
-health crisis), please contact your academic adviser or Counseling
-and Psychological Services (CaPS). In addition to offering support,
-they will reach out to the instructors for all your courses on your
-behalf to request an extension.</li>
-  <li><strong>University-Approved Absences:</strong> If you are attending an
-out-of-town university approved event (e.g. multi-day
-athletic/academic trip organized by the university), you may request
-an extension for the duration of the trip. You must provide
-confirmation of your attendance, usually from a faculty or staff
-organizer of the event.</li>
-</ul>
-
-<p>For any of the above situations, you may request an extension <strong>by
-emailing the TA at svmehta [a] cs [dot] cmu [dot] edu  – do not email
-the instructor</strong>. The email should be sent as soon as you are
-aware of the conflict and at least <strong>5 days prior to the
-deadline</strong>. In the case of an emergency, no notice is needed.</p>
+<p>In general, we do not grant extensions on assignments. We expect late days to help you with sufficient accommodation. However, in the case of severe medical or family emergencies, you may request an extension <strong>by
+emailing the TA at svmehta [a] cs [dot] cmu [dot] edu  – also copy instructors in the email </strong>. The email should be sent as soon as you are
+aware of the conflict.
 
 
 <h3 id="7-academic-integrity-policies">Academic Integrity Policies</h3>
@@ -657,10 +641,6 @@ can even lead to dismissal from the university.</p>
 </ul>
 
 <p>If you have questions about this or your coursework, please let the instructors know.</p>
-
-<hr />
-
-    <p><b>Note:</b> This website is adapted from <a href="https://deeplearning-cmu-10707.github.io"> 10707 Spring 2019</a> course website.</p>
   </div>
   </section>
   </body>
